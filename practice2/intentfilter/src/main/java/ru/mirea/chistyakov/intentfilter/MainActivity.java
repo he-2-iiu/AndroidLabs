@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         buttonBrowse.setOnClickListener(oclBtnBr);
 
         buttonSend = findViewById(R.id.buttonSend);
+        buttonSend.setOnClickListener(oclBtnSend);
 
     }
 
