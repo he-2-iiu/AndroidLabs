@@ -1,5 +1,6 @@
-package ru.mirea.chistyakov.multiactivity;
+package ru.mirea.chistyakov.practice3;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -13,18 +14,16 @@ import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
 
+    private TextView textView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        String text = (String) getIntent().getSerializableExtra("key");
-
         setContentView(R.layout.activity_second);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        TextView t_view = (TextView) findViewById(R.id.textView);
-        t_view.setText(text);
+        textView = findViewById(R.id.date);
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -34,5 +33,9 @@ public class SecondActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+
+        String dataString = (String) getIntent().getSerializableExtra("date");
+        textView.setText(dataString);
     }
 }

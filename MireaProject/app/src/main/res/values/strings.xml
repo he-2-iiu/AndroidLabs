@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MireaProject</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_browser">Browser</string>
+    <string name="menu_calculator">Calculator</string>
+
+    <string name="menu_c1">Calculate 2 numbers</string>
+    <string name="menu_sum">+</string>
+    <string name="menu_diff">-</string>
+    <string name="menu_mult">*</string>
+    <string name="menu_div">/</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
