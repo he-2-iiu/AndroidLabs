@@ -20,4 +20,19 @@
         android:name="ru.mirea.chistyakov.mireaproject.ui.calc.FragmentCalculator"
         android:label="@string/menu_calculator"
         tools:layout="@layout/fragment_calculator" />
+    <fragment
+        android:id="@+id/nav_hardware"
+        android:name="ru.mirea.chistyakov.mireaproject.ui.hardware.FragmentHardware"
+        android:label="@string/menu_hardware"
+        tools:layout="@layout/fragment_hardware" />
+    <fragment
+        android:id="@+id/nav_options"
+        android:name="ru.mirea.chistyakov.mireaproject.ui.options.FragmentOptions"
+        android:label="@string/menu_options"
+        tools:layout="@layout/fragment_options" />
+    <fragment
+        android:id="@+id/nav_stories"
+        android:name="ru.mirea.chistyakov.mireaproject.ui.stories.FragmentStories"
+        android:label="@string/menu_stories"
+        tools:layout="@layout/fragment_stories" />
 </navigation>

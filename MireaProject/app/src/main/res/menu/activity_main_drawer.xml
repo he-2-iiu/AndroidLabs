@@ -13,5 +13,14 @@
         <item
             android:id="@+id/nav_calculator"
             android:title="@string/menu_calculator" />
+        <item
+            android:id="@+id/nav_hardware"
+            android:title="@string/menu_hardware" />
+        <item
+            android:id="@+id/nav_options"
+            android:title="@string/menu_options" />
+        <item
+            android:id="@+id/nav_stories"
+            android:title="@string/menu_stories" />
     </group>
 </menu>
