@@ -3,6 +3,10 @@
     package="ru.mirea.chistyakov.mireaproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -12,11 +16,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MireaProject">
+        <activity
+            android:name=".FirebaseActivity"
+            android:label="@string/title_activity_firebase"
+            android:theme="@style/Theme.MireaProject.NoActionBar"></activity>
+
         <service
             android:name=".PlayerService"
             android:enabled="true"
-            android:exported="true">
-        </service>
+            android:exported="true"></service>
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="ru.mirea.chistyakov.mireaproject.fileProvider"
@@ -38,9 +47,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.CAMERA" />
 
 </manifest>

@@ -35,4 +35,9 @@
         android:name="ru.mirea.chistyakov.mireaproject.ui.stories.FragmentStories"
         android:label="@string/menu_stories"
         tools:layout="@layout/fragment_stories" />
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="ru.mirea.chistyakov.mireaproject.ui.info.InfoFragment"
+        android:label="@string/menu_info"
+        tools:layout="@layout/fragment_info" />
 </navigation>

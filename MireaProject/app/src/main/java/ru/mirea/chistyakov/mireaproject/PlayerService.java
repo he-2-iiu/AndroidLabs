@@ -5,12 +5,10 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 
-import ru.mirea.chistyakov.mireaproject.AppPreference.Preferences;
-
 import java.lang.reflect.Field;
 
-import static ru.mirea.chistyakov.mireaproject.AppPreference.*;
-import static ru.mirea.chistyakov.mireaproject.AppPreference.Preferences.*;
+import static ru.mirea.chistyakov.mireaproject.AppPreference.Preferences.MUSIC_CHOICE;
+import static ru.mirea.chistyakov.mireaproject.AppPreference.getPreference;
 
 public class PlayerService extends Service {
     private MediaPlayer mediaPlayer;
