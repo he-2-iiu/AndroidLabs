@@ -41,12 +41,14 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_browser, R.id.nav_calculator, R.id.nav_hardware, R.id.nav_options, R.id.nav_stories)
+                R.id.nav_home, R.id.nav_browser, R.id.nav_calculator, R.id.nav_hardware, R.id.nav_options, R.id.nav_stories, R.id.nav_info)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        Intent intent = new Intent(this, FirebaseActivity.class);
+        startActivity(intent);
     }
 
     @Override
